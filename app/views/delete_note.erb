@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Delete A Note</h1>
+     <form action='/delete/<%=@note.id%>' method='post'> 
+  <!--     web browsers do not support put or delete, action is set to post
+            then the hidden _method which we set to delete allows us to fake
+            the delete request -->
+      <%=@note.note%> <input type="submit" name="_method" value="delete">
+    </form>
+  </div>
+<!-- 
+
+  <form id='new_note' action='/notes' method='post'>
+
+
+<div class="container">
+  <h1>Edit A Note</h1>
+   <form action='/notes/<%=@note.id%>' method='post'>
+    <input type="text" name="note" placeholder="Type your note here" required value="<%=@note.note%>">
+    <input type="submit" value="Save Edited Note">
+  </form>
+</div> -->
