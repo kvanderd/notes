@@ -2,6 +2,7 @@
   <h1>Edit A Note</h1>
    <form action='/notes/<%=@note.id%>' method='post'>
     <input type="text" name="note" placeholder="Type your note here" required value="<%=@note.note%>">
+    <input type="text" name="note" placeholder="Type your note here" required value="<%=@note.content%>">
     <input type="submit" value="Save Edited Note">
   </form>
 </div>
